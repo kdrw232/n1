@@ -1,6 +1,6 @@
 const express = require('express')
-const router = require('./routers/users')
-const newUser = require('./routers/authUser')
+// const router = require('./routers/users')
+// const newUser = require('./routers/authUser')
 const app = express();
 const port = 4320 || process.env.PORT; 
 
@@ -18,8 +18,8 @@ app.get("/api", (req, res) => {
 
 
 // End Point
-app.use("/api",router );
-app.use("/api", newUser);
+// app.use("/api",router );
+// app.use("/api", newUser);
 
 
 
